@@ -1,3 +1,5 @@
+from math import log, exp
+
 def add (x,y):
     max_decimal_length = [0]
     if (type(x) == float):
@@ -21,3 +23,9 @@ def sin(x,N):
 
 def divide(x,y):
     return float(x)/float(y)
+
+def multiplicate(x,y):
+    return x*y
+
+def derivative_of_exponential(x):
+    return log(exp(x))*exp(x)
