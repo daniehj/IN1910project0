@@ -15,10 +15,11 @@ def test_factorial_exercise_4():
 
 
 def test_sin_exercise_4():
-    assert calculator.sin(math.pi/2) == 1.0
+    x = 1
+    assert (calculator.sin(math.pi/2,10) - x) < 1e-12
 
 def test_divide_exercise_4():
-    assert calculator.divide(1./2) == .5
+    assert calculator.divide(1,2) == .5
 
 def test_multiplicate_exercise_4():
     assert calculator.multiplicate(1,2) == 2
