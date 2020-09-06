@@ -39,7 +39,7 @@ def test_divide_exercise_4(arg,expected_output):
     assert calculator.divide(arg [0],arg[1]) == expected_output
 
 @pytest.mark.parametrize(
-    "arg, expected_output", [[(-1, -1), 1], [(1, 1), 1], [(1, 0), 0]]
+    "arg, expected_output", [[(-1, -1), 1], [(1, 1), 1], [(1, 1), 0]]
 )
 def test_multiplicate_exercise_4(arg,expected_output):
     assert calculator.multiplicate(arg[0],arg[1]) == expected_output
