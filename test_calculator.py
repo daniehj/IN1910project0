@@ -1,4 +1,5 @@
 import calculator
+import math
 
 def test_add_exercise_1():
     assert calculator.add(1,2) == 3
@@ -8,3 +9,19 @@ def test_add_exercise_2():
 
 def test_add_exercise_3():
     assert calculator.add("Hello ","World") == "Hello World"
+
+def test_factorial_exercise_4():
+    assert calculator.factorial(5) == 1*2*3*4*5
+
+
+def test_sin_exercise_4():
+    assert calculator.sin(math.pi/2) == 1.0
+
+def test_divide_exercise_4():
+    assert calculator.divide(1./2) == .5
+
+def test_multiplicate_exercise_4():
+    assert calculator.multiplicate(1,2) == 2
+
+def test_derivative_of_exponential_exercise_4():
+    assert calculator.derivative_of_exponential(2) == 14.7781121978613
